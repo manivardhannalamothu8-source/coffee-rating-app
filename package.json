@@ -1,13 +1,20 @@
 {
   "name": "coffee-rating-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Full-stack Coffee Rating Application",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "seed": "node seed.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "coffee",
+    "rating",
+    "express",
+    "nodejs",
+    "sqlite"
+  ],
+  "author": "Mani Vardhan Nalamothu",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

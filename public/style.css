@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f3ef;
+    color: #3e2723;
+}
+
+/* Header */
+
+header {
+    background: #4b2e20;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Sections */
+
+.leaderboard-section,
+.coffee-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Leaderboard */
+
+.leaderboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card h3 {
+    margin-bottom: 10px;
+}
+
+.rank {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Coffee Grid */
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Coffee Card */
+
+.coffee-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.coffee-card:hover {
+    transform: translateY(-5px);
+}
+
+.coffee-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.coffee-info {
+    margin-bottom: 8px;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.votes {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Vote Button */
+
+.vote-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #6f4e37;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.vote-btn:hover {
+    background: #4b2e20;
+}
+
+.vote-btn:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+/* Section title */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #4b2e20;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .section-title {
+        display: block;
+    }
+}
